@@ -22,7 +22,7 @@ class DefaultColors {
 class AppTheme {
   static ThemeData get darkTheme {
     return ThemeData(
-      brightness: Brightness.dark,
+      // brightness: Brightness.dark,
       primaryColor: Colors.white,
       scaffoldBackgroundColor: Color(0xFF1B202D),
       textTheme: TextTheme(

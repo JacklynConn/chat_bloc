@@ -1,3 +1,5 @@
+import 'package:chat_app/core/theme.dart';
+import 'package:chat_app/message_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,17 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Chat App',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'Hello, Flutter!',
-            style: TextStyle(fontSize: 24),
-          ),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.darkTheme,
+      home: MessagePage(),
     );
   }
 }
